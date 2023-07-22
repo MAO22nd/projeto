@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -12,6 +11,10 @@ var ball_opitions={
 	friction:0,
 	density:1.2
 }
+ball=Bodies.circle(200,100,20,ball_opitions);
+word.add(word,ball);
+rectMode(Center);
+ellipseMode(ball.position.x,ball.position.y,20)
 function preload()
 {
 	
@@ -46,5 +49,3 @@ function keyPressed(){
 
 	}
 }
-
-
